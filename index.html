@@ -5,13 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>🎮 GAME TOPUP - ร้านเติมเกมออนไลน์</title>
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Segoe UI', sans-serif;
-    }
-
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
     body {
       background: linear-gradient(135deg, #1e3a8a, #3b82f6);
       min-height: 100vh;
@@ -19,28 +13,11 @@
       text-align: center;
       padding: 40px 20px;
     }
-
-    .container {
-      max-width: 900px;
-      margin: 0 auto;
-    }
-
-    h1 {
-      font-size: 2.5rem;
-      margin-bottom: 10px;
-    }
-
-    .logo {
-      font-size: 3rem;
-      margin-bottom: 10px;
-    }
-
-    .subtitle {
-      font-size: 1.2rem;
-      color: #dbeafe;
-      margin-bottom: 40px;
-    }
-
+    .container { max-width: 900px; margin: 0 auto; }
+    h1 { font-size: 2.5rem; margin-bottom: 10px; }
+    .logo { font-size: 3rem; margin-bottom: 10px; }
+    .subtitle { font-size: 1.2rem; color: #dbeafe; margin-bottom: 40px; }
+    
     .card {
       background: white;
       color: #1e40af;
@@ -49,93 +26,52 @@
       margin-bottom: 25px;
       box-shadow: 0 8px 25px rgba(0,0,0,0.15);
     }
-
-    h2 {
-      font-size: 1.3rem;
-      margin-bottom: 15px;
-      color: #1e40af;
-    }
-
+    h2 { font-size: 1.4rem; margin-bottom: 20px; color: #1e40af; }
+    
     .games-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
       gap: 15px;
     }
-
     .game-card {
       background: #eff6ff;
       border-radius: 12px;
-      padding: 15px 10px;
-      text-align: center;
-      transition: transform 0.2s ease;
-    }
-
-    .game-card:hover {
-      transform: translateY(-5px);
-    }
-
-    .game-card img {
-      width: 80px;
-      height: 80px;
-      object-fit: cover;
-      border-radius: 10px;
-      margin-bottom: 10px;
-    }
-
-    .game-card p {
+      padding: 20px 10px;
+      font-size: 1.1rem;
       font-weight: 600;
       color: #1e40af;
     }
-
-    .steps {
-      text-align: left;
-    }
-
-    .step {
-      padding: 10px 0;
-      border-bottom: 1px solid #ddd;
-    }
-
+    .game-icon { font-size: 2.5rem; margin-bottom: 8px; }
+    
+    .steps { text-align: left; }
+    .step { padding: 12px 0; border-bottom: 1px solid #ddd; font-size: 1.05rem; }
     .step-num {
       display: inline-block;
       background: #2563eb;
       color: white;
-      width: 28px;
-      height: 28px;
+      width: 30px;
+      height: 30px;
       border-radius: 50%;
       text-align: center;
-      line-height: 28px;
-      margin-right: 10px;
+      line-height: 30px;
+      margin-right: 12px;
       font-weight: bold;
     }
-
-    .contact {
-      line-height: 1.8;
-    }
-
+    
+    .contact { line-height: 2; font-size: 1.05rem; }
     .btn {
       display: inline-block;
       background: linear-gradient(90deg, #f59e0b, #f97316);
       color: white;
-      padding: 14px 35px;
+      padding: 15px 40px;
       border-radius: 50px;
       text-decoration: none;
       font-weight: bold;
-      font-size: 1.1rem;
-      margin-top: 20px;
+      font-size: 1.15rem;
+      margin-top: 10px;
       box-shadow: 0 4px 15px rgba(245, 158, 11, 0.4);
-      transition: transform 0.2s;
     }
-
-    .btn:hover {
-      transform: scale(1.05);
-    }
-
-    footer {
-      margin-top: 40px;
-      font-size: 0.9rem;
-      color: #bfdbfe;
-    }
+    footer { margin-top: 40px; font-size: 0.9rem; color: #bfdbfe; }
   </style>
 </head>
 <body>
@@ -148,28 +84,28 @@
       <h2>🔥 เกมยอดนิยม</h2>
       <div class="games-grid">
         <div class="game-card">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Valorant_Logo.svg/1200px-Valorant_Logo.svg.png" alt="Valorant">
-          <p>Valorant</p>
+          <div class="game-icon">⚔️</div>
+          <div>Valorant</div>
         </div>
         <div class="game-card">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/PUBG_Logo.svg/1200px-PUBG_Logo.svg.png" alt="PUBG">
-          <p>PUBG</p>
+          <div class="game-icon">🔫</div>
+          <div>PUBG</div>
         </div>
         <div class="game-card">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Rov_logo.png/1200px-Rov_logo.png" alt="ROV">
-          <p>ROV</p>
+          <div class="game-icon">🏰</div>
+          <div>ROV</div>
         </div>
         <div class="game-card">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Free_Fire_Logo.svg/1200px-Free_Fire_Logo.svg.png" alt="Free Fire">
-          <p>Free Fire</p>
+          <div class="game-icon">🎯</div>
+          <div>Free Fire</div>
         </div>
         <div class="game-card">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Genshin_Impact_logo.svg/1200px-Genshin_Impact_logo.svg.png" alt="Genshin Impact">
-          <p>Genshin Impact</p>
+          <div class="game-icon">✨</div>
+          <div>Genshin Impact</div>
         </div>
         <div class="game-card">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Minecraft_Logo.svg/1200px-Minecraft_Logo.svg.png" alt="Minecraft">
-          <p>Minecraft</p>
+          <div class="game-icon">⛏️</div>
+          <div>Minecraft</div>
         </div>
       </div>
     </div>
@@ -185,12 +121,14 @@
       </div>
     </div>
 
-    <div class="card contact">
+    <div class="card">
       <h2>📞 ติดต่อเรา</h2>
-      <p>📧 อีเมล: support@gametopup.com</p>
-      <p>💬 Line: @gametopup</p>
-      <p>📱 Facebook: GAME TOPUP - ร้านเติมเกม</p>
-      <p>⏰ เปิดให้บริการ: ทุกวัน 09:00 - 24:00 น.</p>
+      <div class="contact">
+        <p>📧 อีเมล: support@gametopup.com</p>
+        <p>💬 Line: @gametopup</p>
+        <p>📱 Facebook: GAME TOPUP - ร้านเติมเกม</p>
+        <p>⏰ เปิดให้บริการ: ทุกวัน 09:00 - 24:00 น.</p>
+      </div>
     </div>
 
     <a href="#" class="btn">🛒 เริ่มช้อปปิ้ง</a>
