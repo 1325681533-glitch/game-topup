@@ -3,15 +3,201 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GAME TOPUP - ร้านเติมเกม</title>
+  <title>🎮 GAME TOPUP - ร้านเติมเกมออนไลน์</title>
   <style>
-    body { font-family: sans-serif; text-align: center; padding: 50px; background: #f0f4f8; }
-    h1 { color: #2563eb; }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #1e3a8a, #3b82f6);
+      min-height: 100vh;
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    .logo {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      font-size: 1.2rem;
+      color: #dbeafe;
+      margin-bottom: 40px;
+    }
+
+    .card {
+      background: white;
+      color: #1e40af;
+      border-radius: 16px;
+      padding: 25px;
+      margin-bottom: 25px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    }
+
+    h2 {
+      font-size: 1.3rem;
+      margin-bottom: 15px;
+      color: #1e40af;
+    }
+
+    .games-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 15px;
+    }
+
+    .game-card {
+      background: #eff6ff;
+      border-radius: 12px;
+      padding: 15px 10px;
+      text-align: center;
+      transition: transform 0.2s ease;
+    }
+
+    .game-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .game-card img {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+
+    .game-card p {
+      font-weight: 600;
+      color: #1e40af;
+    }
+
+    .steps {
+      text-align: left;
+    }
+
+    .step {
+      padding: 10px 0;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .step-num {
+      display: inline-block;
+      background: #2563eb;
+      color: white;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 28px;
+      margin-right: 10px;
+      font-weight: bold;
+    }
+
+    .contact {
+      line-height: 1.8;
+    }
+
+    .btn {
+      display: inline-block;
+      background: linear-gradient(90deg, #f59e0b, #f97316);
+      color: white;
+      padding: 14px 35px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1rem;
+      margin-top: 20px;
+      box-shadow: 0 4px 15px rgba(245, 158, 11, 0.4);
+      transition: transform 0.2s;
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 0.9rem;
+      color: #bfdbfe;
+    }
   </style>
 </head>
 <body>
-  <h1>🎮 GAME TOPUP</h1>
-  <p>ร้านเติมเกมออนไลน์ ครบ จบ ในที่เดียว</p>
-  <p>ยินดีต้อนรับครับ!</p>
+  <div class="container">
+    <div class="logo">🎮</div>
+    <h1>GAME TOPUP</h1>
+    <p class="subtitle">ร้านเติมเกมออนไลน์ ครบ จบ ในที่เดียว</p>
+
+    <div class="card">
+      <h2>🔥 เกมยอดนิยม</h2>
+      <div class="games-grid">
+        <div class="game-card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Valorant_Logo.svg/1200px-Valorant_Logo.svg.png" alt="Valorant">
+          <p>Valorant</p>
+        </div>
+        <div class="game-card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/PUBG_Logo.svg/1200px-PUBG_Logo.svg.png" alt="PUBG">
+          <p>PUBG</p>
+        </div>
+        <div class="game-card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Rov_logo.png/1200px-Rov_logo.png" alt="ROV">
+          <p>ROV</p>
+        </div>
+        <div class="game-card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Free_Fire_Logo.svg/1200px-Free_Fire_Logo.svg.png" alt="Free Fire">
+          <p>Free Fire</p>
+        </div>
+        <div class="game-card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Genshin_Impact_logo.svg/1200px-Genshin_Impact_logo.svg.png" alt="Genshin Impact">
+          <p>Genshin Impact</p>
+        </div>
+        <div class="game-card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Minecraft_Logo.svg/1200px-Minecraft_Logo.svg.png" alt="Minecraft">
+          <p>Minecraft</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>🚀 วิธีใช้งาน</h2>
+      <div class="steps">
+        <div class="step"><span class="step-num">1</span>เลือกเกมและจำนวนที่ต้องการเติม</div>
+        <div class="step"><span class="step-num">2</span>กรอกชื่อผู้ใช้ / ID เกม</div>
+        <div class="step"><span class="step-num">3</span>เลือกวิธีชำระเงิน</div>
+        <div class="step"><span class="step-num">4</span>ยืนยันการสั่งซื้อ</div>
+        <div class="step"><span class="step-num">5</span>รับของในเกม ภายในไม่กี่นาที!</div>
+      </div>
+    </div>
+
+    <div class="card contact">
+      <h2>📞 ติดต่อเรา</h2>
+      <p>📧 อีเมล: support@gametopup.com</p>
+      <p>💬 Line: @gametopup</p>
+      <p>📱 Facebook: GAME TOPUP - ร้านเติมเกม</p>
+      <p>⏰ เปิดให้บริการ: ทุกวัน 09:00 - 24:00 น.</p>
+    </div>
+
+    <a href="#" class="btn">🛒 เริ่มช้อปปิ้ง</a>
+
+    <footer>
+      <p>© 2025 GAME TOPUP. สงวนลิขสิทธิ์.</p>
+    </footer>
+  </div>
 </body>
 </html>
